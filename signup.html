@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFOpg</title>
+    <script src="ag.js"></script>
     <style>
         body{
             display: flex;
@@ -37,7 +38,7 @@
     width: 100%;
     font-family: Open Sans,sans-serif;
 }
-        }
+        
     </style>
 </head>
 <body>
@@ -53,9 +54,10 @@
         <header style="padding-left: 10px;"><img src="./images/rdc-redbus-logo.svg" width="100px" ></header>
         <div class="center">
         <h1 style="margin-top: 100px; color: #d84e55;font-weight: 200; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Sign in to avail exciting discounts and cashbacks!!</h1>
-            <form>
-                <input type="tel" placeholder="+91-xxxxxxxxxx" maxlength="10" size="100">
-                <button type="submit">Submit</button>
+            <form id="form">
+                <input type="text" id="name" placeholder="Full-Name" size="100"><br><br>
+                <input type="tel" id="sub" placeholder="+91-xxxxxxxxxx" maxlength="10" size="100">
+                <button type="submit" onclick="storeinput()">Submit</button>
             </form>
             <p style="font-size: 12px; margin-top:2px;text-align: center;">By clicking on submit, you have read and agree to the terms and condition</p>
             
