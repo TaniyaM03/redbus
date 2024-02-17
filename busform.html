@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2{
+            color: #d84e55;
+        }
+        form{
+            text-align: center;
+            border-radius: ;
+
+        }
+        button{
+            background-color:#d84e55;
+            height: 5vh;
+            width: 100px;
+            font-weight: 400;
+        }
+        form{
+            margin:170px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header style="padding-left: 10px;"><img src="./images/rdc-redbus-logo.svg" width="100px" ></header>
+    <form>
+    <h2>Booking Information</h2>
+    <p>FROM:
+      <select name="from" id="from" required="">
+        <option value="">---select from location--</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Pune">Pune</option>
+        <option value="Hyderabad">Hyderabad</option>  
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>      
+      </select>    
+    </p>
+    <p>TO:
+        <select name="to" id="from" required="">
+          <option value="">---select from location--</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Pune">Pune</option>
+          <option value="Hyderabad">Hyderabad</option>  
+          <option value="Mumbai">Mumbai</option>
+          <option value="Delhi">Delhi</option>      
+        </select>    
+      </p>
+    <p>
+      DATE:<input type="date" name="date" id="Date" required="">
+    </p>
+    <button type="submit"><a href="paymentform.html" >NEXT</a></button>
+   
+    </form>
+</body>
+</html>

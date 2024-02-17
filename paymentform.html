@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="payment.css">
+    
+<style>
+    .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+</style>
+</head>
+
+<body class="bgColor">
+                <div>
+                    <p class="fw-bold fs-5 mb-0 ps-3 ">Payment</p>
+                </div>
+                <div class="flex-grow-1 text-end">
+                </div>
+            </div>
+            <div class="bg-white radius1 border mb-4">
+                <div class="ps-4">
+                    <img class="w-50 pt-3" src="https://static-exp1.licdn.com/sc/h/8bca1rltjmsti0v31srweuz2z">
+                </div>
+                <hr>
+                <form id="checkoutForm" method="POST">
+                    <div class="w-50 m-auto mb-4">
+                        <div>First name</div>
+                        <div class="mb-2"><input id="FN" name="firstName" class="w-100" type="text"></div>
+                        <div>Last name</div>
+                        <div class="mb-2"><input id="LN" name="lastName" class="w-100" type="text"></div>
+                        <div>Credit or debit card number</div>
+                        <div class="mb-2"><input id="cardNumber" name="cardNumber" class="w-100" type="text"></div>
+                        <div class="d-flex mb-2">
+                            <div>
+                                <div>Expiration date</div>
+                                <div><input id="expiryDate" name="expiryDate" class="w-100" type="date"></div>
+                            </div>
+                            <div class="ps-3">
+                                <div>Security code</div>
+                                <div><input id="securityCode" name="securityCode" class="w-100" type="number"></div>
+                            </div>
+                        </div>
+                        <div>Country</div>
+                        <div class="mb-2"><input id="country" name="country" class="w-100" type="text"></div>
+                        <div class="d-flex mb-4">
+                            <div>
+                                <div>Postal code</div>
+                                <div><input id="postalCode" name="postalCode" class="w-100" type="text"></div>
+                            </div>
+                        </div>
+                        <div class="w-100 mb-4 d-flex justify-content-around">
+                            <button id="submitForm" class="bg-primary border-0 borderRadius text-white fw-bold heighT ps-3 pe-3">Proceed</button>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
