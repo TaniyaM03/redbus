@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
+    <title>Checkout Page</title>
 
-    
+    <link rel="icon" href="https://static-exp1.licdn.com/sc/h/9zdi3ctlftg3w912onmsvg2bn" sizes="96x96" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="payment.css">
-    
+    <link rel="stylesheet" href="postcheckout.css">
+    <link rel="stylesheet" href="precheckout.css">
 <style>
     .popup {
     display: none;
@@ -30,10 +30,17 @@
 </head>
 
 <body class="bgColor">
+    <div class="bgColor">
+        <div id="popup" class="popup"></div>
+            <div class="mb-3 d-flex">
                 <div>
                     <p class="fw-bold fs-5 mb-0 ps-3 ">Payment</p>
                 </div>
                 <div class="flex-grow-1 text-end">
+                    <span class="tt " data-bs-placement="bottom"
+                        title="Don't worry you won't be charged until your free trial ends. We ask for your payment information to provide a seamless subscription experiece. You can cancel anytime before march 23 2022 to avoid being charged, and we'll send you an email reminder 7 days before your free trial ends.">
+                        <p class="fontS pt-1 text-primary d-inline">Why do we need this for a free trial?</p>
+                    </span>
                 </div>
             </div>
             <div class="bg-white radius1 border mb-4">
@@ -66,22 +73,54 @@
                                 <div>Postal code</div>
                                 <div><input id="postalCode" name="postalCode" class="w-100" type="text"></div>
                             </div>
+                            <div class="ps-3">
+                                <div>GST</div>
+                                <div><input id="gst" name="gst" class="w-100" type="text" placeholder="Optional"></div>
+                            </div>
                         </div>
                         <div class="w-100 mb-4 d-flex justify-content-around">
-                            <button id="submitForm" class="bg-primary border-0 borderRadius text-white fw-bold heighT ps-3 pe-3">Proceed</button>
+                            <button id="submitForm" class="bg-primary border-0 borderRadius text-white fw-bold heighT ps-3 pe-3">Review order</button>
                         </div>
                     </div>
                 </form>
                 
             </div>
-            
+            <div class="bg-white radius1 mb-4 border">
+                <div class="ps-4 pt-2">
+                    Frequently asked questions
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <div class="p-4 w33">
+                        <div class="fontS fw-bold h50">Will I be charged during my free trial?</div>
+                        <div class="fontSize1">No, you won't be charged during your free trial, which begins on February
+                            23, 2022 and ends on March 23, 2022. You can
+                            cancel anytime before March 23, 2022 to avoid being charged.</div>
+                    </div>
+                    <div class="p-4 w33">
+                        <div class="fw-bold fontS h50">How can I cancel during my free trial?</div>
+                        <div class="fontSize1">Once you're signed up, a link to cancel will appear on your Settings page.
+                            Learn more about how to cancel on our <br><a class="textDecor" href="#">Help
+                                Center</a>.</div>
+                    </div>
+                    <div class="p-4 w33">
+                        <div class="fw-bold fontS h50">What happens after the free trial period?</div>
+                        <div class="fontSize1">If you do not cancel before your free trial period ends on March 23, 2022,
+                            you will be automatically charged for your
+                            subscription.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- tooltip -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
+<script src="postcheckout.js"></script>
