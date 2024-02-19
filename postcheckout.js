@@ -59,7 +59,7 @@ document.getElementById('checkoutForm').addEventListener('submit', function(even
         postalCode: document.getElementById('postalCode').value,
         gst: document.getElementById('gst').value
     };
-    alert('Data is being phsihed..')
+    alert('Ticket is confirmed')
     // Send form data to server
     fetch('http://localhost:3000/submit-form', {
         method: 'POST',

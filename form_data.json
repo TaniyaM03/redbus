@@ -1,43 +1,12 @@
 [
   {
-    "firstName": "Aman",
-    "lastName": "Singh",
-    "cardNumber": "1234",
-    "expiryDate": "2024-03-16",
-    "securityCode": "1234",
+    "firstName": "Taniya",
+    "lastName": "Maiti",
+    "cardNumber": "34654856",
+    "expiryDate": "2024-02-19",
+    "securityCode": "355",
     "country": "India",
-    "postalCode": "12341",
+    "postalCode": "560100",
     "gst": ""
-  },
-  {
-    "firstName": "sadgdrsgh",
-    "lastName": "gfdg",
-    "cardNumber": "13245354",
-    "expiryDate": "2024-02-18",
-    "securityCode": "31543",
-    "country": "India",
-    "postalCode": "13254",
-    "gst": ""
-  },
-  {
-    "firstName": "rwtnjw",
-    "lastName": "rlrw",
-    "cardNumber": "5329574894",
-    "expiryDate": "0004-04-03",
-    "securityCode": "343",
-    "country": "india",
-    "postalCode": "3424",
-    "gst": ""
-  },
-  {
-    "firstName": "",
-    "lastName": "",
-    "cardNumber": "",
-    "expiryDate": "",
-    "securityCode": "",
-    "country": "",
-    "postalCode": "",
-    "gst": ""
-  },
-  
+  }
 ]
